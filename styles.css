@@ -2,77 +2,91 @@
 
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  /* This ensures the image is vertically centered in the viewport */
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
   }
-  
+
   nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    padding: 5px;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-right: 5px;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+
   main {
-    margin: 20px;
+    margin: 10px;
   }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    header {
-      padding: 10px;
-    }
-  
-    nav {
-      padding: 5px;
-    }
-  
-    nav ul li {
-      margin-right: 5px;
-    }
-  
-    main {
-      margin: 10px;
-    }
-  }
+}
