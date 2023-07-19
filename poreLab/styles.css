@@ -66,6 +66,12 @@ body {
     /* This ensures the image is vertically centered in the viewport */
   }
 
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+  }
+
   /* Media Queries */
   @media (max-width: 768px) {
     header {
