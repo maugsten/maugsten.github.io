@@ -23,12 +23,20 @@
   <main>
     <section id="abstract">
       <h3>Abstract</h3>
-      <p>Write your abstract here.</p>
+      <p>
+        Model porous media were 3D printed. 
+        Particle Image Velocimetry and Particle Tracking Velocimetry was used to evaluate single phase flow in the model.
+        The results from the velocimetry methods were compared and PTV was found to be superior for this "oppsett".
+        Multiphase flow with a glycerol/water solution and air was then recorded.
+        PTV was then used to evaluate the velocity field of the wet phase.
+        Averaging techniques were then studied to find representations of the velocities in time. 
+      </p>
     </section>
 
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
+        NB! HUSK Å SKRIVE TIL PRESENS NÅR DU LESER IGJENNOM. (UNTATT ABTRACTET)
         Fluid flows through porous media play a crucial role in various environmental and energy-related processes, 
         influencing everything from groundwater remediation to carbon dioxide sequestration. 
         Porous media, such as soils, river beds, and rocks, serve as conduits for the transportation of molecules, bacteria, and particles. 
@@ -37,11 +45,11 @@
       </p>
       <p>
         In light of this challenge, our research project aims to delve deeper into the intricacies of fluid dynamics in porous media. 
-        Through a collaborative effort between students and researchers at Porelab and the Njord Centre, we seek to gain new insights 
+        Through a collaborative effort between students and researchers at Porelab, we seek to gain new insights 
         by conducting laboratory experiments that explore the behavior of multiple fluids flowing together through porous media.
       </p>
       <p>
-        To achieve this, we will employ two cutting-edge methodologies that we have recently developed. 
+        To achieve this, we will employ two cutting-edge methodologies that are recently developed. 
         The first involves the construction of transparent model porous media using state-of-the-art stereolithography 
         3D printing techniques. By creating these transparent models, we can visualize and better understand the interactions between 
         different fluids within the porous medium.
@@ -63,26 +71,35 @@
       <p>
         The experimental set-up is shown in figure 1. The model porous media is made of 2 mm cylinders placed symmetrically in a 3D printed
         cell with length ~40 mm, width ~20 mm and height 2 mm. 
-        The cylinders were spaced evenly with ~6 mm between them. The fluid was pumped through the porous medium with a constant 
-        flow rate using a syringe and a ...  
-        The fluid was collected in a resevoir. 
-        The fluid was a mixture of glycerol and water respectively accounting for 85% and 15% of the mass of the solution.
-        Under the model porous media was a LED panel (which?) with a glass plate seperating them.
-        On the LED panel, we put a high pass filter.
-        A camera was mounted above the model with a tripod. 
-        The camera was a ... 
-        A low pass filter was mounted on the camera.     
+        The cylinders were spaced evenly with ~6 mm between them. 
       </p>
       <p> 
         <div class="centered-image-container">
-          <img src="mountain.jpg" alt="mountain" style="width:300px;height:200px;">
-          <a>&nbsp;&nbsp;&nbsp;</a>
-          <img src="waves2.jpg" alt="waves" style="width:400px;height:200px;">
+          <img src="particlesWithNoise.jpg" alt="mountain" style="width:320px;height:300px;">
         </div>
         <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
         <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
       </p>
-
+      <p>
+        The fluid was pumped through the porous medium with a constant 
+        flow rate of 0.5 mL/min using a syringe and a Harvard Apparatus PHD Ultra pump.  
+        The fluid was collected in a resevoir. 
+        The fluid was a mixture of glycerol and water respectively accounting for 85% and 15% of the mass of the solution.
+        Under the model porous media was a GREEN LIGHT LED panel lamp with a glass plate seperating them.
+        On the LED panel, we put a Lee Farbfolie Bogen 126 M(...) high pass filter.
+        A camera was mounted above the model with a tripod. 
+        ( The camera was a ... )
+        A MIDOPT FIL LP500/67 low pass filter was mounted on the camera.     
+      </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="particlesWithNoise.jpg" alt="mountain" style="width:320px;height:300px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="particlesDenoised.jpg" alt="waves" style="width:320px;height:300px;">
+        </div>
+        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
+        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+      </p>
       <p>
         There are three basic steps for particle velocimetry; Seeding, illumination and imaging. 
         Seeding means preparing a solution with tracing particles for the camera to see. 
@@ -97,35 +114,132 @@
         For the seeding part, two different fluorescent types of particles were tested. 
         The property that seperated them was their size.
         We tried both 30 micron spheres and 2.5 micron spheres.  
-        The particles were suspended in the mixture of glycerol and water (and surfacant). 
+        To prevent the particles from clumping together, we mixed them into some surfacant.
+        This dampens the attractive force between the particles. 
+        The amount used was enough to cover all particles, but not so much that it changes 
+        the macroscoptic properties of the final solution.  
+        The particles were suspended in the mixture of glycerol and water. 
+        85% and 15% of each. Maybe oil instead?
         Add a "how to make section".
       </p>
       <p>
-        To illuminate the particle, we shun light at them from a LED panel.
-        The producer provides the following emission spectre for the tracing particles (Vis denne figuren!). 
-        The panel was covered with a ... high pass filter. 
-        This was done in order to dampen the LED panel's frequencies below the excitation band (Skriv om!).
+        To illuminate the particle, we shun light at them from the LED panel.
+        The producers of the LED panel and tracing particles provides the following emission spectres.
+        LEGG TIL DOBBEL FIGUR HER!
+        A key feature of the particles is that they ?emit? light at a lower frequency than it was excited with.
+        The trick is to filter out all the unwanted frequencies.
+        We do this by adding the high pass filter over the LED panel. 
+        This way, we know that all light with frequency below this threshold comes from the particles.
+        Then we add a low pass filter on the camera to remove the frequencies above the threshold. 
+        This should leave us with only the light from the particles. 
+        In reality, the filters will not have sharp threshold and some light with other frequencies must be expected.
       </p>
       <p>
-        Imaging:
+        For obtaining images of the fluid flow, we used a (specs: FAST Track) high speed camera. 
+        We found that suitable camera settings were 50 frames per second and ?1/200? shutter speed.  
+        SPØR OM TIPS FRA CHATGPT HER!
       </p>
     </section>
     
     <section id="data analysis">
       <h2>Data Analysis</h2>
       <p>
-        noe
+        Having now obtained a sequence of images of the fluid flow, we begin analysing the data.
+        The goal is to be left with a series of images only containing the particles as they flow throught the model.
+        First we want to remove the background in all the images. 
+        At this stage the procedure varies from steady singlephase flow and unsteady multiphase flow. 
+        For the singlephase flow, we subtract the average of the whole video. 
+        By this, we mean the median of all values for each pixel. SJEKK OPP DETTE.
+      </p>
+      <p>
+        Then we want to segment out all that is not fluid in the images.
+        Segmenting out the boundary of the model porous media can easily be done by hand with ImageJ.
+        The appropriate tool is called the Freeform selection tool.
+        To segment out the cylinders, we used a Hough transform tool (from gsc or something) to find circles.
+        This takes in some range of diameters to look for circles in and a strictness parameter. 
+        Tuning these parameters works for our videos, but not that circles are harder to register if the 
+        particle concentration is high.   
+        If it is unsteady multiphase flow, we also need to segment the two phases. 
+        In our images, the light intensity in each of the phases were comparable, but the intensity of the 
+        interface was conciderably lower.
+        This allowed us to segment the phases by using a digital low pass filter. 
+        After the filtering, we were only left with the interface. 
+        This interface was then morphologically closed. 
+        By floodfilling the air phase, we obtained a segmentation of the two phases for each timestep.   
+      </p>
+      <p>
+        Putting the background reduced images and the segmentations together, we obtain a series of images only 
+        containing the particles and some noise. This noise was dampened by the despeckle tool in ImageJ (Or what Kevin?).
+        These images are the input to the PIV and PTV algorithms. The PIV analysis was done in MATLAB with the PIVLAB add-on. 
+        The add-on also includes the feature of adding masks like our segmention image of the cylinders. 
+        This makes it so that the velocity field is not evaluated on points which are masked out. See image. 
+        The PTV analysis was done with Python and the open-source program TracTrac.  
+        The PTV algorithm evaluates the fluid velocity at points where is detects particles. 
+        This makes masks ?obcelite?. 
+        DET ER MER DETALJER HER. 
+      </p>
+      <p>
+        By running TracTrac and the PTV algorithm, we obtain a .txt file with particle detections at each line.
+        To better represent the findings, we use linear interpolation on the detections to evaluate the velocity field at every pixel.
+        Here, we also use the cylinder mask and the mask for the boundary of the model to impose no-flux and no-slip conditions.  
+        Then we divide the time into a set of bins; each bin containing 10 frames. 
+        Now we average the velocity at each pixel over the bin. 
+        Given that the interface does not move much during this time, the velocity field should be well represented.     
+      </p>
+      <p>
+        Steps:
+        1. Background reduction \n
+        2. Segmentation of the cell
+        3. Segmentation of the cylinders 
+        4. Segmentation of interface
+        5. Combine to proc ims 
+        6. PTV analysis with tractrac.py # important step! lots of details here 
+        
+        Post-process:
+        7. Divide timeline in bins
+        8. Average velocities in time (the bins)
+        9. How do i visualize findings??
       </p>
     </section>
     
     <section id="results">
       <h2>Results</h2>
-      <p>Present your findings and results here.</p>
+      <p>
+        Present your findings and results here:
+        
+          PIV:
+            Steady singlephase flow:
+            u
+            v
+            |(u,v)|
+
+          PTV:
+            Steady singlephase flow:
+            u
+            v
+            |(u,v)|
+            compare with simulation
+
+            Unsteady multiphase flow:
+            u
+            v
+            |(u,v)|
+      </p>
+      <video controls>
+        <source src="ux.avi" type="video/avi">
+        <!-- If the AVI format is not supported, you can provide alternative formats. -->
+        <!-- For example, you can provide an MP4 version like this: -->
+        <!-- <source src="your-video.mp4" type="video/mp4"> -->
+        <!-- Or a WebM version like this: -->
+        <!-- <source src="your-video.webm" type="video/webm"> -->
+        Your browser does not support the video tag.
+    </video>
     </section>
     
     <section id="conclusion">
       <h2>Conclusion</h2>
       <p>Summarize your project and draw conclusions here.</p>
+
     </section>
   </main>
   
