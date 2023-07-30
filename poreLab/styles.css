@@ -66,6 +66,13 @@ body {
     /* This ensures the image is vertically centered in the viewport */
   }
 
+  video {
+    width: 640px; /* Adjust the width as needed */
+    height: 360px; /* Adjust the height as needed */
+    display: block;
+    margin: 0 auto;
+  }
+
   figcaption {
     font-style: italic;
     text-align: center;

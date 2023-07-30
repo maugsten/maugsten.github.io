@@ -24,6 +24,7 @@
     <section id="abstract">
       <h3>Abstract</h3>
       <p>
+        DENNE MÅ SEES OVER. 
         Model porous media were 3D printed. 
         Particle Image Velocimetry and Particle Tracking Velocimetry was used to evaluate single phase flow in the model.
         The results from the velocimetry methods were compared and PTV was found to be superior for this "oppsett".
@@ -36,7 +37,6 @@
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
-        NB! HUSK Å SKRIVE TIL PRESENS NÅR DU LESER IGJENNOM. (UNTATT ABTRACTET)
         Fluid flows through porous media play a crucial role in various environmental and energy-related processes, 
         influencing everything from groundwater remediation to carbon dioxide sequestration. 
         Porous media, such as soils, river beds, and rocks, serve as conduits for the transportation of molecules, bacteria, and particles. 
@@ -50,34 +50,43 @@
       </p>
       <p>
         To achieve this, we will employ two cutting-edge methodologies that are recently developed. 
-        The first involves the construction of transparent model porous media using state-of-the-art stereolithography 
+        The first involves the construction of transparent model porous media using stereolithography 
         3D printing techniques. By creating these transparent models, we can visualize and better understand the interactions between 
         different fluids within the porous medium.
       </p>
       <p>
         The second methodology entails the use of laser-based imaging of fluorescent particles to precisely measure and 
         quantify fluid velocities. This technique will enable us to analyze the movements of various fluids as they navigate 
-        through the intricate network of porous spaces.
+        through the intricate network of porous spaces. In this project we investigate simultaneous flows of a glycerol-water mixture 
+        and air.
       </p>
     </section>
     
     <section id="experimental set-up">
       <h2>Experimental Set-up</h2>
       <p>
-        The setup: model porous media, solution, syringe, resevoir, LED panel, high pass filter, camera, low pass filter.
-        A first step was to do steady flow with one phase. This made it easier to tune parameters. This process involved tuning particle size, 
-        viscosity, illumination, filters,  ...
-      </p>
-      <p>
-        The experimental set-up is shown in figure 1. The model porous media is made of 2 mm cylinders placed symmetrically in a 3D printed
-        cell with length ~40 mm, width ~20 mm and height 2 mm. 
-        The cylinders were spaced evenly with ~6 mm between them. 
+        We model porous media by 3D printing cells with cylinders in some configurations.
+        All models have an inlet and an outlet for the fluids. 
+        Some models have two inlets in order to pull in two different fluids.  
+        In the following figure, we see some examples.
       </p>
       <p> 
         <div class="centered-image-container">
-          <img src="particlesWithNoise.jpg" alt="mountain" style="width:320px;height:300px;">
+          <img src="IMG-7801.jpg" alt="models" style="width:700px;height:280px;">
         </div>
-        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
+        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+      </p>
+      <p>
+        <!-- The experimental set-up is shown in figure 1.  -->
+        The model porous media that we use in this project is made of 2 mm cylinders placed symmetrically in a 3D printed
+        cell with length 40 mm, width 20 mm and height 2 mm. 
+        The cylinders were spaced evenly with 6 mm between them. 
+        A picture of the model is shown in figure X. 
+      </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="IMG-7818.jpg" alt="model" style="width:420px;height:300px;">
+        </div>
         <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
       </p>
       <p>
@@ -86,19 +95,9 @@
         The fluid was collected in a resevoir. 
         The fluid was a mixture of glycerol and water respectively accounting for 85% and 15% of the mass of the solution.
         Under the model porous media was a GREEN LIGHT LED panel lamp with a glass plate seperating them.
-        On the LED panel, we put a Lee Farbfolie Bogen 126 M(...) high pass filter.
+        On the LED panel, we put a Lee Farbfolie Bogen 126 Mauve high pass filter.
         A camera was mounted above the model with a tripod. 
-        ( The camera was a ... )
         A MIDOPT FIL LP500/67 low pass filter was mounted on the camera.     
-      </p>
-      <p> 
-        <div class="centered-image-container">
-          <img src="particlesWithNoise.jpg" alt="mountain" style="width:320px;height:300px;">
-          <a>&nbsp;&nbsp;&nbsp;</a>
-          <img src="particlesDenoised.jpg" alt="waves" style="width:320px;height:300px;">
-        </div>
-        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
-        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
       </p>
       <p>
         There are three basic steps for particle velocimetry; Seeding, illumination and imaging. 
@@ -134,11 +133,23 @@
         This should leave us with only the light from the particles. 
         In reality, the filters will not have sharp threshold and some light with other frequencies must be expected.
       </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="FMGspectra.jpg" alt="model" style="width:380px;height:300px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="IMG-7619.jpg" alt="model" style="width:332px;height:300px;">
+        </div>
+        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+      </p>
       <p>
         For obtaining images of the fluid flow, we used a (specs: FAST Track) high speed camera. 
         We found that suitable camera settings were 50 frames per second and ?1/200? shutter speed.  
         SPØR OM TIPS FRA CHATGPT HER!
       </p>
+      <video width="640" height="360" controls>
+        <source src="multiPhaseFlow2Inverted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
     
     <section id="data analysis">
@@ -167,6 +178,17 @@
         This interface was then morphologically closed. 
         By floodfilling the air phase, we obtained a segmentation of the two phases for each timestep.   
       </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="cell.jpg" alt="noise" style="width:250px;height:250px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="cylinders.jpg" alt="noNoise" style="width:250px;height:250px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="interface.jpg" alt="noNoise" style="width:250px;height:250px;">
+        </div>
+        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
+        <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+      </p>
       <p>
         Putting the background reduced images and the segmentations together, we obtain a series of images only 
         containing the particles and some noise. This noise was dampened by the despeckle tool in ImageJ (Or what Kevin?).
@@ -177,6 +199,15 @@
         The PTV algorithm evaluates the fluid velocity at points where is detects particles. 
         This makes masks ?obcelite?. 
         DET ER MER DETALJER HER. 
+      </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="particlesWithNoise2.jpg" alt="noise" style="width:320px;height:200px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="particlesDenoised2.jpg" alt="noNoise" style="width:320px;height:200px;">
+        </div>
+        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
+        <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
       </p>
       <p>
         By running TracTrac and the PTV algorithm, we obtain a .txt file with particle detections at each line.
@@ -225,15 +256,16 @@
             v
             |(u,v)|
       </p>
-      <video controls>
-        <source src="ux.avi" type="video/avi">
-        <!-- If the AVI format is not supported, you can provide alternative formats. -->
-        <!-- For example, you can provide an MP4 version like this: -->
-        <!-- <source src="your-video.mp4" type="video/mp4"> -->
-        <!-- Or a WebM version like this: -->
-        <!-- <source src="your-video.webm" type="video/webm"> -->
+      <video width="640" height="360" controls>
+        <source src="ux2speed.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+      </video>
+      <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+      <video width="640" height="360" controls>
+        <source src="uy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
     </section>
     
     <section id="conclusion">
