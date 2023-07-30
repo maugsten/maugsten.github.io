@@ -22,15 +22,16 @@
   
   <main>
     <section id="abstract">
-      <h3>Abstract</h3>
+      <!-- <h3>Abstract</h3> -->
       <p>
-        DENNE MÅ SEES OVER. 
-        Model porous media were 3D printed. 
-        Particle Image Velocimetry and Particle Tracking Velocimetry was used to evaluate single phase flow in the model.
-        The results from the velocimetry methods were compared and PTV was found to be superior for this "oppsett".
-        Multiphase flow with a glycerol/water solution and air was then recorded.
-        PTV was then used to evaluate the velocity field of the wet phase.
-        Averaging techniques were then studied to find representations of the velocities in time. 
+        In this study, we fabricated model porous media through 3D printing techniques. 
+        Subsequently, the evaluation of single-phase flow in the model was conducted using Particle Image Velocimetry (PIV) 
+        and Particle Tracking Velocimetry (PTV). 
+        A comparative analysis of the results from the two velocimetry methods revealed the superiority of PTV for the 
+        specific flow under investigation. 
+        Moving forward, the investigation extended to multiphase flow, involving a glycerol/water solution and air. 
+        The PTV method was employed to assess the velocity field of the wet phase. 
+        Furthermore, we explored various averaging techniques to effectively represent the temporal characteristics of the velocities.
       </p>
     </section>
 
@@ -65,7 +66,7 @@
     <section id="experimental set-up">
       <h2>Experimental Set-up</h2>
       <p>
-        We model porous media by 3D printing cells with cylinders in some configurations.
+        We model porous media by 3D printing cells with cylinders in some configuration.
         All models have an inlet and an outlet for the fluids. 
         Some models have two inlets in order to pull in two different fluids.  
         In the following figure, we see some examples.
@@ -74,24 +75,24 @@
         <div class="centered-image-container">
           <img src="IMG-7801.jpg" alt="models" style="width:700px;height:280px;">
         </div>
-        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+        <figcaption>Figure 1: This figure shows three examples of 3D printed model porous media. </figcaption>
       </p>
       <p>
         <!-- The experimental set-up is shown in figure 1.  -->
         The model porous media that we use in this project is made of 2 mm cylinders placed symmetrically in a 3D printed
         cell with length 40 mm, width 20 mm and height 2 mm. 
         The cylinders were spaced evenly with 6 mm between them. 
-        A picture of the model is shown in figure X. 
+        A picture of the model is shown in figure 2. 
       </p>
       <p> 
         <div class="centered-image-container">
           <img src="IMG-7818.jpg" alt="model" style="width:420px;height:300px;">
         </div>
-        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+        <figcaption>Figure 2: This figure shows the model porous media used in this project. </figcaption>
       </p>
       <p>
         The fluid was pumped through the porous medium with a constant 
-        flow rate of 0.5 mL/min using a syringe and a Harvard Apparatus PHD Ultra pump.  
+        flow rate of 0.5 mL/min using a syringe and a Harvard Apparatus PHD Ultra Programmable Syringe Pump.  
         The fluid was collected in a resevoir. 
         The fluid was a mixture of glycerol and water respectively accounting for 85% and 15% of the mass of the solution.
         Under the model porous media was a GREEN LIGHT LED panel lamp with a glass plate seperating them.
@@ -106,7 +107,7 @@
         and removing trapped air with an ultrasonic bath. 
         Illumination involves lighting up the particles so that they stand out in the images. 
         We used a LED panel and pass filters in order to strengthen the signal from the particles.
-        In addition to pictures of the particles, imaging includes tuning parameters like frame rate,
+        In addition to taking pictures of the particles, imaging includes tuning parameters like frame rate,
         shutter speed, and focal length. 
       </p>
       <p>
@@ -118,20 +119,18 @@
         The amount used was enough to cover all particles, but not so much that it changes 
         the macroscoptic properties of the final solution.  
         The particles were suspended in the mixture of glycerol and water. 
-        85% and 15% of each. Maybe oil instead?
-        Add a "how to make section".
+        <!-- 85% and 15% of each. -->
       </p>
       <p>
         To illuminate the particle, we shun light at them from the LED panel.
-        The producers of the LED panel and tracing particles provides the following emission spectres.
-        LEGG TIL DOBBEL FIGUR HER!
-        A key feature of the particles is that they ?emit? light at a lower frequency than it was excited with.
+        The producers of the LED panel and tracing particles provides the following emission spectrum.
+        A key feature of the particles is that they emit light at a lower frequency than it was excited with.
         The trick is to filter out all the unwanted frequencies.
         We do this by adding the high pass filter over the LED panel. 
         This way, we know that all light with frequency below this threshold comes from the particles.
         Then we add a low pass filter on the camera to remove the frequencies above the threshold. 
         This should leave us with only the light from the particles. 
-        In reality, the filters will not have sharp threshold and some light with other frequencies must be expected.
+        In reality, the filters will not have discontinuity at the threshold and some light with other frequencies must be expected.
       </p>
       <p> 
         <div class="centered-image-container">
@@ -139,34 +138,47 @@
           <a>&nbsp;&nbsp;&nbsp;</a>
           <img src="IMG-7619.jpg" alt="model" style="width:332px;height:300px;">
         </div>
-        <figcaption>Figure 1: This figure shows (a) ... and (b) ... </figcaption>
+        <figcaption>Figure 3: On the left we see the excitation and emission spectrum of the particles, and  
+          on the right we see the effect of a filter being used to strenghten the particles singal. 
+          The particles are put in a Petri dish and illuminated with the LED panel.
+        </figcaption>
       </p>
       <p>
-        For obtaining images of the fluid flow, we used a (specs: FAST Track) high speed camera. 
-        We found that suitable camera settings were 50 frames per second and ?1/200? shutter speed.  
-        SPØR OM TIPS FRA CHATGPT HER!
+        For obtaining images of the fluid flow, we used a high speed camera. 
+        We found that suitable camera settings were 50 frames per second and ?1/50? seconds exposure time.  
+        By employing all the techniques described here, we obtain videos like the following of the fluid flow with particles.  
       </p>
       <video width="640" height="360" controls>
         <source src="multiPhaseFlow2Inverted.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <figcaption>Figure 4: Here is an example of multiphase flow in porous media. 
+      </figcaption>
     </section>
     
     <section id="data analysis">
       <h2>Data Analysis</h2>
       <p>
         Having now obtained a sequence of images of the fluid flow, we begin analysing the data.
-        The goal is to be left with a series of images only containing the particles as they flow throught the model.
+        The goal is to be left with a series of images only containing the particles as they flow through the model.
         First we want to remove the background in all the images. 
         At this stage the procedure varies from steady singlephase flow and unsteady multiphase flow. 
         For the singlephase flow, we subtract the average of the whole video. 
-        By this, we mean the median of all values for each pixel. SJEKK OPP DETTE.
+        By this, we mean the median of all values for each pixel.
+        If the flow is unsteady, we see how many frames we could average over in the beginning without the interface changing too much. 
+        For our unsteady video, the number of frames were 200. 
+      </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="bk.jpg" alt="bk" style="width:530px;height:250px;">
+        </div>
+        <figcaption>Figure 5: This figure shows the background being reducted from the video. </figcaption>
       </p>
       <p>
         Then we want to segment out all that is not fluid in the images.
         Segmenting out the boundary of the model porous media can easily be done by hand with ImageJ.
         The appropriate tool is called the Freeform selection tool.
-        To segment out the cylinders, we used a Hough transform tool (from gsc or something) to find circles.
+        To segment out the cylinders, we used the Hough Circle Transform to find circles.
         This takes in some range of diameters to look for circles in and a strictness parameter. 
         Tuning these parameters works for our videos, but not that circles are harder to register if the 
         particle concentration is high.   
@@ -187,18 +199,13 @@
           <img src="interface.jpg" alt="noNoise" style="width:250px;height:250px;">
         </div>
         <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
-        <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+        <figcaption>Figure 6: This figure shows the masks for the boundary of the model (left), 
+          the cylinders (middle) and the interface (right). </figcaption>
       </p>
       <p>
         Putting the background reduced images and the segmentations together, we obtain a series of images only 
-        containing the particles and some noise. This noise was dampened by the despeckle tool in ImageJ (Or what Kevin?).
-        These images are the input to the PIV and PTV algorithms. The PIV analysis was done in MATLAB with the PIVLAB add-on. 
-        The add-on also includes the feature of adding masks like our segmention image of the cylinders. 
-        This makes it so that the velocity field is not evaluated on points which are masked out. See image. 
-        The PTV analysis was done with Python and the open-source program TracTrac.  
-        The PTV algorithm evaluates the fluid velocity at points where is detects particles. 
-        This makes masks ?obcelite?. 
-        DET ER MER DETALJER HER. 
+        containing the particles and some noise. This noise was dampened by the total variation denoising method.
+        The effect can be seen in figure 7.
       </p>
       <p> 
         <div class="centered-image-container">
@@ -207,9 +214,14 @@
           <img src="particlesDenoised2.jpg" alt="noNoise" style="width:320px;height:200px;">
         </div>
         <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
-        <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+        <figcaption>Figure 7: This figure shows a close up of an image before (left) and after (left) denoising. </figcaption>
       </p>
       <p>
+        These images are the input to the PIV and PTV algorithms. The PIV analysis was done in MATLAB with the PIVLAB add-on. 
+        The add-on also includes the feature of adding masks like our segmention image of the cylinders. 
+        This makes it so that the velocity field is not evaluated on points which are masked out as we see in figure 8. 
+        The PTV analysis was done with Python and the open-source program TracTrac.  
+        The PTV algorithm evaluates the fluid velocity at points where is detects particles. 
         By running TracTrac and the PTV algorithm, we obtain a .txt file with particle detections at each line.
         To better represent the findings, we use linear interpolation on the detections to evaluate the velocity field at every pixel.
         Here, we also use the cylinder mask and the mask for the boundary of the model to impose no-flux and no-slip conditions.  
@@ -217,60 +229,49 @@
         Now we average the velocity at each pixel over the bin. 
         Given that the interface does not move much during this time, the velocity field should be well represented.     
       </p>
-      <p>
-        Steps:
-        1. Background reduction \n
-        2. Segmentation of the cell
-        3. Segmentation of the cylinders 
-        4. Segmentation of interface
-        5. Combine to proc ims 
-        6. PTV analysis with tractrac.py # important step! lots of details here 
-        
-        Post-process:
-        7. Divide timeline in bins
-        8. Average velocities in time (the bins)
-        9. How do i visualize findings??
-      </p>
     </section>
     
     <section id="results">
       <h2>Results</h2>
       <p>
-        Present your findings and results here:
-        
-          PIV:
-            Steady singlephase flow:
-            u
-            v
-            |(u,v)|
-
-          PTV:
-            Steady singlephase flow:
-            u
-            v
-            |(u,v)|
-            compare with simulation
-
-            Unsteady multiphase flow:
-            u
-            v
-            |(u,v)|
+      In the case of single phase steady flow we tested both PIV and PTV.
+      The PIV result is shown in figure 8. This is an ensemble average. 
+      This resolves the fluid flow well, except for at the boundary. 
+      The boundary is of course very important, and a closer investigation reveales a massive divergence in the field. 
+      The boundary is better resolved with the PTV method because of higher resolution, 
+      and because we can impose boundary conditions (by saying we have detection of 0 velocity at the boundaries).
+      </p>
+      <p> 
+        <div class="centered-image-container">
+          <img src="piv.jpg" alt="noise" style="width:600px;height:250px;">
+          <a>&nbsp;&nbsp;&nbsp;</a>
+          <img src="pivZoom.jpg" alt="noNoise" style="width:300px;height:250px;">
+        </div>
+        <!-- <img src="mountain.jpg" alt="Profile Picture" style="width:500px;height:300px;"> -->
+        <figcaption>Figure 8: This figure shows the PIV evaluated field and a close up of the boundary. </figcaption>
+      </p>
+      <p>
+        For the unsteady multiphase flow, we used the PTV method to obtain velocity detections at different locations. 
+        We impose boundary conditions by setting the velocities at the boundaries (not the interface) to zero. 
+        For each frame we linear interpolate the registered velocities and evaluate the velocity at each pixel. 
+        Then we average the velocities over 10 frames to better represent the field. 
+        The horizontal and vertical velocities are shown in the two following videos.   
       </p>
       <video width="640" height="360" controls>
         <source src="ux2speed.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+      <figcaption>Figure 9: This video shows the horizontal velocities evaluated with the PTV method. </figcaption>
       <video width="640" height="360" controls>
         <source src="uy.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <figcaption>Figure 1: This figure shows a close up of an image (a) before and (b) after despeckling. </figcaption>
+      <figcaption>Figure 10: This video shows the vertical velocities evaluated with the PTV method. </figcaption>
     </section>
     
-    <section id="conclusion">
+    <!-- <section id="conclusion">
       <h2>Conclusion</h2>
-      <p>Summarize your project and draw conclusions here.</p>
+      <p>Summarize your project and draw conclusions here.</p> -->
 
     </section>
   </main>
