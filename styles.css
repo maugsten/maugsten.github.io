@@ -24,6 +24,7 @@ header {
   width: 120px;
   height: auto;
   margin-right: 20px;
+  max-width: 100%;  /* Ensure image doesn't exceed its container */
   border-radius: 5%; /* Optional: makes the image circular */
 }
 
